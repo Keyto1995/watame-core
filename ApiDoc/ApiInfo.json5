@@ -1,0 +1,10 @@
+{
+  title: "Api文档标题",
+  desc: "文档描述",
+  version: "1.0.0",
+  termsOfServiceUrl: "服务提供商链接",
+  contact: {
+    name: "联系人",
+    email: "邮箱地址",
+  },
+}
