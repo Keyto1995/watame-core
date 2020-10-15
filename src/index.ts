@@ -21,11 +21,12 @@ async function mapDir(dir: string): Promise<string[]> {
   return result;
 }
 let fileDirectory = ".";
+import { IApiDetail } from "./InterfaceList";
 mapDir(fileDirectory).then((data) => {
   data.forEach(async (pathname) => {
     const data = await fs.readFile(pathname, "utf-8");
     console.log(data);
-    let j = JSON5.parse(data);
+    let j: IApiDetail = JSON5.parse(data);
     console.log(j);
   });
 });
