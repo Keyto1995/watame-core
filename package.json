@@ -1,0 +1,23 @@
+{
+  "name": "watame",
+  "version": "0.0.0",
+  "description": "一个为前后端对接实现的API生成器",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "clean": "rimraf node_modules/ && npm run clean:dist",
+    "clean:dist": "rimraf dist"
+  },
+  "author": "Keyto",
+  "license": "MIT",
+  "dependencies": {
+    "json5": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/json5": "0.0.30",
+    "@types/node": "^14.11.8",
+    "ts-node-dev": "^1.0.0-pre.65",
+    "typescript": "^4.0.3"
+  }
+}
